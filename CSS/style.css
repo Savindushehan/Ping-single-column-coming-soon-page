@@ -105,6 +105,7 @@ h3{
     font-size: 0.7vw;
     color:hsl(354, 100%, 66%);
     font-style: italic;
+    display: none;
 }
  .details{
         display: flex;
