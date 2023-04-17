@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bai+Jamjuree&family=Bebas+Neue&family=Big+Shoulders+Display:wght@700&family=Cormorant+SC:wght@300&family=Dancing+Script&family=Edu+VIC+WA+NT+Beginner:wght@400;700&family=Ibarra+Real+Nova:ital,wght@1,600&family=Itim&family=Josefin+Sans:wght@300&family=League+Spartan:wght@700&family=Lexend+Deca&family=Libre+Franklin:wght@300&family=Open+Sans&family=Poppins:wght@600&family=Raleway:wght@400;700&family=Roboto:wght@300;400&family=Rubik&family=Unbounded:wght@700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.logo{
+    margin-top:3vh;
+    width: 5vw;
+    margin-bottom: 0;
+}
+h1{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 3vw;
+    color: hsl(0, 0%, 59%);
+    font-weight: 700;
+    margin-top: 3vh;
+    margin-bottom: 0;
+}
+.soon{
+    color: hsl(209, 33%, 12%) ;
+}
+h2{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1vw;
+    color:hsl(209, 33%, 12%);
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+.email{
+    margin-top: 3vh;
+    margin-bottom: 0;
+}
+#email-field{
+    width: 20vw;
+    padding: 1.5vh 2vw 1.5vh 2vw;
+    border-radius: 2.5rem;
+    border-color: hsl(0, 0%, 59%);
+    font-family: 'Libre Franklin', sans-serif;
+    color: hsl(209, 33%, 12%);
+    font-size: 0.8vw;
+}
+button{
+    margin-left: 1vw;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+    width: 10vw;
+    background-color: hsl(223, 87%, 63%) ;
+    border-radius: 2.5rem;
+    border: none;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    font-size: 0.8vw;
+    cursor: pointer;
+}
+.dashboard{
+    margin-top: 5vh;
+    width: 40vw;
+}
+.media{
+    margin-top: 2vh;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+.media img{
+    transition: transform .2s;
+    cursor: pointer;
+}
+.media img:hover{
+    transform: scale(1.5);
+    background-color:hsl(223, 87%, 63%);
+}
+.facebook{
+    width: 2vw;
+    border-radius: 50%;
+}
+.twitter{
+    width: 2vw;
+    border-radius: 50%;
+}
+.instragram{
+    width: 2vw;
+    border-radius: 50%;
+}
+h3{
+    margin-top: 1vh;
+    margin-bottom: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.7vw;
+    color: hsl(0, 0%, 59%);
+}
+#error{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 0.7vw;
+    color:hsl(354, 100%, 66%);
+    margin-right: 20vw;
+    font-style: italic;
+}
+
+@media only screen and (max-width:1270px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .container{
+        width: 20rem;
+        overflow: hidden;
+    }
+    .logo{
+        margin-top: 2rem;
+        width: 5rem;
+        margin-bottom: 2rem;
+    }
+    h1{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    h2{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .email{
+        display: flex;
+        flex-direction: column
+     }
+    #email-field{
+        width: 17rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+    button{
+        width: 17rem;
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2.5rem;
+    }
+    .dashboard{
+        width: 19rem;
+        margin-bottom: 2rem;
+    }
+    .facebook, .instragram, .twitter{
+        width: 3rem;
+    }
+    h3{
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+}
